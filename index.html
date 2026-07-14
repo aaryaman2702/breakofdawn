@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Break of Dawn — Real food, from scratch, every morning</title>
-<meta name="description" content="Break of Dawn makes small-batch, plant-based almond milk, granola, bliss balls, vegan cheese and dips — handmade from scratch, every morning.">
+<title>Break of Dawn — Fresh Almond Milk & Plant-Based Food, Mumbai</title>
+<meta name="description" content="Small-batch almond milk made fresh at first light — plant-based, preservative-free vegan cheese, granola, bliss balls & dips, delivered across Mumbai at the break of dawn.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Break of Dawn — wake up to the good s***.">
+<meta property="og:description" content="Small-batch almond milk, made fresh at first light. Plant-based, no dairy, no shortcuts — delivered at the break of dawn.">
+<meta property="og:image" content="brand-assets/lifestyle/almond-milk-marble.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="brand-assets/logos/bod-logo-derivative-3.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +21,7 @@
 <!-- ============ NAV ============ -->
 <header class="nav nav--light" id="nav" data-video-hero>
   <a class="nav-logo" href="index.html" aria-label="Break of Dawn home">
-    <span class="nav-wordmark">Break of Dawn</span>
+    <span class="nav-wordmark-mask" role="img" aria-label="Break of Dawn"></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
     <a href="index.html" aria-current="page">home</a>
@@ -45,7 +50,7 @@
 
 <!-- ============ CINEMATIC VIDEO HERO (pinned) ============ -->
 <div class="hero-cine" id="heroCine">
-  <h1 class="sr-only">Break of Dawn — fresh, plant-based food made by hand at the break of dawn</h1>
+  <h1 class="sr-only">Break of Dawn — fresh almond milk, vegan cheese, granola and plant-based food, made by hand in Mumbai and delivered at the break of dawn</h1>
   <div class="hero-cine-media" id="heroMedia">
     <video class="hero-video" autoplay muted loop playsinline preload="auto"
            poster="brand-assets/video/almond-milk-hero-poster.jpg">
@@ -56,11 +61,18 @@
   <div class="hero-grain" aria-hidden="true"></div>
 
   <div class="hero-cine-foot wrap">
-    <p class="eyebrow eyebrow--light hero-fade">plant-based · made by hand</p>
-    <a href="#intro" class="hero-cue hero-fade" aria-label="Scroll to content">
-      <span>scroll</span>
-      <span class="hero-cue-track"><i></i></span>
-    </a>
+    <div class="hero-lead">
+      <p class="eyebrow eyebrow--light hero-fade">made by hand · at first light</p>
+      <p class="hero-word hero-fade">wake up to<br>the good s<span class="stars">***</span><span class="hero-dot">.</span></p>
+      <p class="hero-sub-cine hero-fade">Made at first light. At your door by morning.</p>
+    </div>
+    <div class="hero-right hero-fade">
+      <button class="hero-pause" id="heroPause" aria-label="Pause background video" aria-pressed="false">❚❚</button>
+      <a href="#intro" class="hero-cue" aria-label="Scroll to content">
+        <span>scroll</span>
+        <span class="hero-cue-track"><i></i></span>
+      </a>
+    </div>
   </div>
 </div>
 <div class="hero-spacer" aria-hidden="true"></div>
@@ -136,6 +148,7 @@
       </a>
       <!-- Vegan cheese -->
       <a class="range-card" href="products.html#vegan-cheese" data-view="View" style="--c1:var(--coral); --c2:var(--teal)">
+        <span class="award-pill"><span class="pill-star">★</span> india's no.1</span>
         <div class="range-dome"></div>
         <img class="range-prod range-prod--round" src="brand-assets/products/vegan-cheese/vegan-cheese-herb.png" alt="Break of Dawn vegan cheese" loading="lazy">
         <div class="range-meta">
@@ -160,6 +173,42 @@
           <p class="link">the full menu</p>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARD ============ -->
+<section class="section-pad award-band" aria-label="Award">
+  <div class="wrap award-inner">
+    <div class="award-seal-wrap" data-reveal>
+      <svg class="seal" viewBox="0 0 240 240" role="img" aria-label="India's No.1 Plant-Based Cheese, awarded by the Vegan India Conference 2026">
+        <defs>
+          <path id="sealRing" d="M120 34 a86 86 0 1 1 -0.1 0" fill="none"></path>
+          <linearGradient id="sealGold" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#EBD79C"></stop><stop offset="1" stop-color="#B8902F"></stop>
+          </linearGradient>
+        </defs>
+        <circle cx="120" cy="120" r="117" fill="#140E07"></circle>
+        <circle cx="120" cy="120" r="111" fill="none" stroke="url(#sealGold)" stroke-width="1.5"></circle>
+        <circle cx="120" cy="120" r="92" fill="none" stroke="url(#sealGold)" stroke-width="1" opacity=".55"></circle>
+        <g class="seal-ring">
+          <text><textPath href="#sealRing" startOffset="0">VEGAN&#160;INDIA&#160;CONFERENCE&#160;2026&#160;&#160;·&#160;&#160;AWARDED&#160;&#160;·&#160;&#160;</textPath></text>
+        </g>
+        <text class="seal-sm" x="120" y="96" text-anchor="middle">INDIA'S</text>
+        <text class="seal-no" x="120" y="142" text-anchor="middle">No.1</text>
+        <text class="seal-md" x="120" y="162" text-anchor="middle">PLANT-BASED CHEESE</text>
+        <g transform="translate(120,184)">
+          <path d="M-15 0 a15 15 0 0 1 30 0Z" fill="url(#sealGold)"></path>
+          <path d="M-9 0 a9 9 0 0 1 18 0Z" fill="#140E07"></path>
+          <path d="M-4 0 a4 4 0 0 1 8 0Z" fill="url(#sealGold)"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="award-copy">
+      <p class="award-eyebrow" data-reveal>the award</p>
+      <h2 data-reveal-up>voted india's <span class="gold">no.1</span> plant-based cheese.</h2>
+      <p data-reveal>Recognised by the Vegan India Conference 2026 — and by thousands of plant-based food lovers across the country. Cultured slowly, by hand, the way real cheese should be.</p>
+      <a href="products.html#vegan-cheese" class="btn btn--on-dark" data-reveal>taste the cheese <span class="btn-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -213,6 +262,100 @@
       brand this personal shouldn't taste like anything less.
     </p>
     <a href="about.html" class="btn btn--outline" data-reveal>Read the full story <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials section-pad-lg" id="testimonials" aria-label="Customer reviews">
+  <span class="testi-mark" aria-hidden="true">&ldquo;</span>
+  <div class="wrap">
+    <div class="testi-head">
+      <p class="eyebrow centered" data-reveal>what people are saying</p>
+      <h2 data-reveal-up>loved across mumbai &amp; beyond</h2>
+    </div>
+
+    <div class="testi-stage" id="testiStage" data-reveal>
+      <figure class="testi-item active">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;If you&rsquo;re looking for the best natural vegan milk, cheeses, yogurts and more in Mumbai, your search ends here. Break of Dawn scores high on flavour and the fact that it&rsquo;s free of added preservatives and oils is the best part. My favourite start to my morning is a cappuccino with their vanilla almond milk.&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Dan WhiteHat — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Definitely the creamiest and the best tasting freshly made almond milk in India!&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Kuntal Joisher — Local Guide</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Break of Dawn, undoubtedly, has the best almond milk in town, delivered early in the morning. The cheeses are fantastic. For a vegan, it&rsquo;s one of the best finds in Mumbai.&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Shimoni Agarwal — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Every year, every occasion, for the past 5 years, Break of Dawn has been my go-to for the most delicious, flavourful, healthy and irresistible cheeses, nut milks and sweet treats! I&rsquo;ve gifted their products to so many people and it&rsquo;s always a hit.&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Harshil Vora — Local Guide</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;The best almond milk delivered fresh every morning! The chilli garlic feta cheese is perfect on a toasted bagel.&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Hardik Doshi — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Incredibly fresh, tasty, and healthy milk and cheeses. Highly recommend. Service is super punctual and very friendly! Overall a breath of fresh air at the break of dawn!&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Binoy Shah — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Best best milk in town! Our whole family is hooked since years. Brilliant and timely service too!&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Tanya Khubchandani Vatsa — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Fresh. Innovative. Deli-freakin-licious. What more could one ask for when it comes to food and beverages. And that&rsquo;s what you get with home delivered products by Break of Dawn — all delivered fresh by dawn. And to top it off, it&rsquo;s vegan.&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Delon Mascarenhas — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;Love love everything about Break of Dawn! The cheese, the milk, and my favourite Pardita! Thank you for making our breakfasts so healthy and magical!&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Priyanka Tanwar — Mumbai</figcaption>
+      </figure>
+      <figure class="testi-item">
+        <span class="testi-stars" aria-label="5 stars">✳✳✳✳✳</span>
+        <blockquote class="testi-quote">&ldquo;The passion and love that has been put into this company is infectious — and it is so apparent in the products you create. They are sooo delicious and unique!&rdquo;</blockquote>
+        <span class="testi-rule" aria-hidden="true"></span>
+        <figcaption class="testi-name">Manali Shah — Mumbai</figcaption>
+      </figure>
+    </div>
+
+    <div class="testi-nav" data-reveal>
+      <button class="testi-arrow" id="testiPrev" aria-label="Previous review">←</button>
+      <div class="testi-dots" id="testiDots" role="tablist" aria-label="Choose review"></div>
+      <button class="testi-arrow" id="testiNext" aria-label="Next review">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESS ============ -->
+<section class="section-pad press" aria-label="Press coverage">
+  <div class="wrap press-inner">
+    <p class="press-label" data-reveal>as featured in</p>
+    <div class="press-row" data-reveal>
+      <a href="https://www.harpersbazaar.in/travel-&-food/story/from-kejriwal-babka-amaranth-muesli-to-chilli-bomb-cheese-change-your-breakfast-game-with-these-new-upgrades-1390567-2026-05-16" target="_blank" rel="noopener">Harper&rsquo;s Bazaar</a>
+      <a href="https://www.cntraveller.in/story/from-mithai-to-macarons-11-indian-food-brands-offering-vegan-alternatives-bengaluru-udaipur-mumbai-delhi/" target="_blank" rel="noopener">Cond&eacute; Nast Traveller</a>
+      <a href="https://thebetterindia.com/313264/easy-steps-to-go-vegan-plant-based-diet-food-brands/" target="_blank" rel="noopener">The Better India</a>
+      <a href="https://www.happycow.net/reviews/break-of-dawn-maharashtra-370312" target="_blank" rel="noopener">HappyCow</a>
+      <a href="https://www.veganfirst.com/article/17-delicious-vegan-cheese-alternatives-in-india" target="_blank" rel="noopener">VeganFirst</a>
+    </div>
   </div>
 </section>
 
@@ -277,7 +420,7 @@
           <li><a href="gather.html">Gather</a></li>
           <li><a href="contact.html">Stockists</a></li>
           <li><a href="contact.html">Wholesale</a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="https://www.instagram.com/bybreakofdawn/?hl=en" target="_blank" rel="noopener">Instagram ↗</a></li>
         </ul>
       </div>
     </div>
